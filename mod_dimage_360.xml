@@ -1,0 +1,39 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<extension type = "module" version = "3.1.0" client = "site" method="upgrade">
+   	<name>DImage 360</name>
+   	<creationDate>January 2018</creationDate>
+  	<author>D'arteweb</author>
+  	<authorEmail>contact@darteweb.com</authorEmail>
+	<authorUrl>http://www.darteweb.com</authorUrl>
+	<copyright>(C) 2011 - 2018 D'arteweb, All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+   	<version>1.0.0</version>
+   	<description>The DImage module provide feature to load 360 degree image on Joomla articles. If you face any issue you can contact author or support at contact@darteweb.com. For any advancement you want, you can contact us.</description>
+	
+   <files>
+      <filename>mod_dimage_360.xml</filename>
+      <filename module="mod_dimage_360">mod_dimage_360.php</filename>
+      <filename>index.html</filename>
+      <filename>helper.php</filename>
+	  <folder>tmpl</folder>
+   </files>
+	
+   <config>
+   <fields name="params">
+			<fieldset name="basic"
+				addfieldpath="/administrator/components/com_menus/models/fields">
+								
+				<field 
+					name="logoFile" 
+					type="media" 
+					label="Select Image"
+					description="Select Image for 360 view"
+					class="" 
+					value="logo"
+					default=""/>
+   </fieldset>
+   </fields>
+   </config>
+   
+	
+</extension>
