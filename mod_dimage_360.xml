@@ -31,7 +31,20 @@
 					class="" 
 					value="logo"
 					default=""/>
-   </fieldset>
+					
+					<field 
+					name="position" 
+					type="text" 
+					label="Enter Postion (Ex. : 100)"
+					description="Enter default position for image 360"
+					class="" 
+					value="logo"
+					default=""/>
+					
+					
+		</fieldset>
+   
+   
    </fields>
    </config>
    
