@@ -35,7 +35,7 @@ var PSV = new PhotoSphereViewer({
 		if(isset($position) && $position != '')
 		{
 			?>
-		default_position:{long: <?php echo $position ?>, lat: Math.PI/2},
+		default_position:{long: <?php echo $position ?>/60},
 		<?php 
 		}
 		?>
