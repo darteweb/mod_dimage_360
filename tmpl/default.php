@@ -6,7 +6,7 @@
       * @license GNU General Public License version 2 or later; see LICENSE.txt
    */
 defined('_JEXEC') or die('');
-
+$mid = $module->id;
 $param = $params->get('logoFile');
 $position = $params->get('position');
 $doc = JFactory::getDocument();
@@ -14,18 +14,18 @@ $doc->addScript( JURI::base().'modules/mod_dimage_360/tmpl/js/three.min.js' );
 $doc->addScript( JURI::base().'modules/mod_dimage_360/tmpl/js/photo-sphere-viewer.min.js' );
 ?>
 <style>
-#dtcontainer{
+#dtcontainer<?php echo $mid;?>{
 width: 100%;
 height: 600px;
 }
 </style>
-<div id="dtcontainer"></div>
+<div id="dtcontainer<?php echo $mid;?>"></div>
 <?php if($param == '')
 {
 	echo "Images not selected";
 }?>
 <script>
-var div = document.getElementById('dtcontainer');
+var div = document.getElementById('dtcontainer<?php echo $mid;?>');
 var PSV = new PhotoSphereViewer({
 		panorama: '<?php echo JURI::base().''.$param;?>',
 		container: div,

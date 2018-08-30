@@ -9,6 +9,9 @@
 		
    class DImage360Helper {
 
+   public static function myFunction($moduleId) {
+      $moduleId;
+ }
    }
 	
 ?>
